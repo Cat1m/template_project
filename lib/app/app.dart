@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       child: Consumer<ThemeViewModel>(
         builder: (context, themeVM, child) {
           return MaterialApp(
-            title: 'Chien_template',
+            title: 'Chien_template_project',
             theme: themeVM.theme,
             home: const CounterScreen(),
           );
