@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:template_project/features/theme/viewmodels/theme_view_model.dart';
+import 'package:template_project/foundation/theme/viewmodels/theme_view_model.dart';
 
+// lib/features/theme/widgets/theme_switch.dart
 class ThemeSwitch extends StatelessWidget {
   const ThemeSwitch({super.key});
 

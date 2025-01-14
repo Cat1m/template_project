@@ -3,7 +3,8 @@ import 'package:template_project/core/base/base_screen.dart';
 import 'package:template_project/features/counter/viewmodels/counter_viewmodel.dart';
 import 'package:template_project/features/counter/views/counter_history_screen.dart';
 import 'package:template_project/features/counter/views/counter_stats_screen.dart';
-import 'package:template_project/features/theme/widgets/theme_switch.dart';
+import 'package:template_project/foundation/theme/widgets/theme_switch.dart';
+import 'package:template_project/features/todo/views/todo_list_screen.dart';
 
 class CounterScreen extends BaseScreen<CounterViewModel> {
   const CounterScreen({super.key});
@@ -31,6 +32,15 @@ class CounterScreen extends BaseScreen<CounterViewModel> {
               context,
               MaterialPageRoute(
                 builder: (_) => CounterStatsScreen(),
+              ),
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.today_outlined),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => TodoListScreen(),
               ),
             ),
           ),

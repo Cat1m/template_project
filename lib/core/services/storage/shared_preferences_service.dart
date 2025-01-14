@@ -97,7 +97,7 @@ class SharedPreferencesService implements StorageService {
   }
 
   Future<DateTime?> getDateTime(String key) async {
-    final dateStr = await getString(key);
+    final dateStr = getString(key);
     if (dateStr == null) return null;
     return DateTime.tryParse(dateStr);
   }
@@ -108,7 +108,7 @@ class SharedPreferencesService implements StorageService {
   }
 
   Future<Map<String, dynamic>?> getJSON(String key) async {
-    final jsonStr = await getString(key);
+    final jsonStr = getString(key);
     if (jsonStr == null) return null;
     return jsonDecode(jsonStr) as Map<String, dynamic>;
   }
